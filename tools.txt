@@ -1,0 +1,15 @@
+bloodhound
+obsidian
+docker.io
+rsmangler
+flameshot
+cowpatty
+hcxdumptool
+hcxtools
+bettercap
+bat
+fzf
+nuclei
+seclists
+remmina
+freeradius
