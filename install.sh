@@ -34,6 +34,6 @@ cd ~/Documents/Tools
 #nmap parser
 git clone "https://github.com/ernw/nmap-parse-output.git" 
 
+#PD tools
+#go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 
-
-#extra- portwfigger sert for burp; terminal config';

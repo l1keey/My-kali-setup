@@ -1,3 +1,4 @@
+golang-go
 bloodhound
 obsidian
 docker.io
