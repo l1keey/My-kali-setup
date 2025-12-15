@@ -20,11 +20,11 @@ sudo apt-get install sublime-text
 
 #tmux logging
 git clone "https://github.com/tmux-plugins/tpm" ~/.tmux/plugins/tpm
-mv -iv ./Tools/.tmux.conf ~/
+mv -iv ./Configs/.tmux.conf ~/
 
 #terminal config
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.bak
-mv -iv ./Tools/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+mv -iv ./Configs/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 
 #other tools
@@ -35,5 +35,5 @@ cd ~/Documents/Tools
 git clone "https://github.com/ernw/nmap-parse-output.git" 
 
 #PD tools
-#go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 

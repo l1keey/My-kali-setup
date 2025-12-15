@@ -10,7 +10,6 @@ hcxtools
 bettercap
 bat
 fzf
-nuclei
 seclists
 remmina
 freeradius
