@@ -26,6 +26,7 @@ mv -iv ./Configs/.tmux.conf ~/
 cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.bak
 mv -iv ./Configs/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
+echo "Other tools:" 
 
 #other tools
 mkdir -p  ~/Documents/Tools
@@ -36,4 +37,8 @@ git clone "https://github.com/ernw/nmap-parse-output.git"
 
 #PD tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+
+#Gowitness
+go install github.com/sensepost/gowitness@latest
+
 
