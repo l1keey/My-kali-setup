@@ -5,7 +5,8 @@ sudo apt update && sudo apt upgrade -y
 echo "[+] System updated"
 
 #common tools
-sudo apt install $(cat tools.txt | tr "\n" " ") -y
+grep -v "#" tools.txt | tr "\n" " " > tools
+sudo apt install $(cat tools) -y
 echo "[+] Tools are installed"
 
 #docker
@@ -22,9 +23,6 @@ sudo apt-get install sublime-text
 git clone "https://github.com/tmux-plugins/tpm" ~/.tmux/plugins/tpm
 mv -iv ./Configs/.tmux.conf ~/
 
-#terminal config
-cp ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.bak
-mv -iv ./Configs/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 echo "Other tools:" 
 
@@ -34,11 +32,16 @@ cd ~/Documents/Tools
 
 #nmap parser
 git clone "https://github.com/ernw/nmap-parse-output.git" 
+#sudo mv nmap-parse-output nmp && mv nmp /opt/
+#sudo ln -ls /opt/mytool /usr/local/bin/mytool
 
+## Web
 #PD tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 
 #Gowitness
 go install github.com/sensepost/gowitness@latest
 
-
+## AD
+#wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
+#sudo mv kerbrute_linux_amd64 /opt/kerbrute && chmod u+x /opt/kerbrute

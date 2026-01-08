@@ -1,15 +1,31 @@
-golang-go
+# ad
 bloodhound
-obsidian
-docker.io
-rsmangler
-flameshot
-cowpatty
-hcxdumptool
-hcxtools
-bettercap
-bat
-fzf
+# web
+
+# brute force
 seclists
+rsmangler
+cupp
+
+# misc and utilities
+golang-go
+#obsidian
+#code-oss
+docker.io
+flameshot
+#fzf
 remmina
-freeradius
+bat
+ranger
+compton
+#rofi
+
+# wireless
+#freeradius
+cowpatty
+#hcxdumptool
+#hcxtools
+bettercap
+
+#services
+evolution

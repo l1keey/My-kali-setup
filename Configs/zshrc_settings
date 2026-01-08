@@ -19,3 +19,7 @@ logterm() {
     fi
 }
 alias logstart='logterm'
+alias rr="ranger"
+
+#time on the right side
+RPROMPT="[%D{%f/%m/%y/}|%@]"
