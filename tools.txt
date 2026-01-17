@@ -1,17 +1,18 @@
-# ad
+#### ad
 bloodhound
-# web
+#### web
 
-# brute force
+#### brute force
 seclists
 rsmangler
 cupp
 
-# misc and utilities
+#### misc and utilities
 golang-go
-#obsidian
+obsidian
 #code-oss
 docker.io
+docker-compose
 flameshot
 #fzf
 remmina
@@ -19,13 +20,15 @@ bat
 ranger
 compton
 #rofi
+libreoffice
+libreoffice-gtk4
 
-# wireless
-#freeradius
+#### wireless
+freeradius
 cowpatty
 #hcxdumptool
 #hcxtools
 bettercap
 
-#services
+#### services
 evolution
