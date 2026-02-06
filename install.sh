@@ -22,7 +22,7 @@ sudo apt-get install sublime-text
 
 #tmux logging
 git clone "https://github.com/tmux-plugins/tpm" ~/.tmux/plugins/tpm
-mv -iv ./Configs/.tmux.conf ~/
+cp ./Configs/.tmux.conf ~/
 
 
 echo "Other tools:" 
@@ -36,14 +36,23 @@ git clone "https://github.com/ernw/nmap-parse-output.git"
 #sudo mv nmap-parse-output nmp && mv nmp /opt/
 #sudo ln -ls /opt/mytool /usr/local/bin/mytool
 
-## Web
+## Web ##
 #PD tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 
 #Gowitness
 go install github.com/sensepost/gowitness@latest
 
-## AD
+## AD ##
 wget "https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64"
 sudo mv kerbrute_linux_amd64 /opt/kerbrute && chmod u+x /opt/kerbrute
 echo "[+] Kerbrute"
+
+
+## UI ##
+mkdir -p ~/.config/picom
+cp ./Configs/picom.conf ~/.config/picom/picom.conf
+
+# I3
+mkdir -p ~/.config/i3
+cp ./Configs/i3/conf ~/.config/i3/conf

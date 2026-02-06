@@ -1,11 +1,15 @@
 #### ad
 bloodhound
 #### web
-
+dirsearch
 #### brute force
 seclists
 rsmangler
 cupp
+
+#### tiling
+#i3
+#feh
 
 #### misc and utilities
 golang-go
@@ -18,10 +22,11 @@ flameshot
 remmina
 bat
 ranger
-compton
+picom
 #rofi
 libreoffice
 libreoffice-gtk4
+jq
 
 #### wireless
 freeradius
