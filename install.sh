@@ -39,6 +39,9 @@ git clone "https://github.com/ernw/nmap-parse-output.git"
 ## Web ##
 #PD tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+echo 'export PATH=$PATH:/home/kali/.pdtm/go/bin' >> ~/.zshrc
+echo 'export PATH=$PATH:/home/kali/go/bin' >> ~/.zshrc
+source ~/.zshrc
 
 #Gowitness
 go install github.com/sensepost/gowitness@latest
@@ -48,7 +51,6 @@ wget "https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux
 sudo mv kerbrute_linux_amd64 /opt/kerbrute && chmod u+x /opt/kerbrute
 echo "[+] Kerbrute"
 
-
 ## UI ##
 mkdir -p ~/.config/picom
 cp ./Configs/picom.conf ~/.config/picom/picom.conf
@@ -56,3 +58,5 @@ cp ./Configs/picom.conf ~/.config/picom/picom.conf
 # I3
 mkdir -p ~/.config/i3
 cp ./Configs/i3/conf ~/.config/i3/conf
+
+# Other
