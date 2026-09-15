@@ -1,6 +1,7 @@
-# Helper script by @sechurity 
+# Helper script by @sechurity
+# Create a log directory, a log file and start logging
 if [ -z "${UNDER_SCRIPT}" ]; then
-    logdir=${HOME}/terminal-logs
+    logdir=${HOME}/logs
     logfile=${logdir}/$(date +%F.%H-%M-%S).$$.log
 
     mkdir -p ${logdir}
@@ -9,9 +10,6 @@ if [ -z "${UNDER_SCRIPT}" ]; then
     script -f -q ${logfile}
 
     exit
-else
-    echo "Already logging to: $UNDER_SCRIPT"
-    echo "Type 'exit' to stop logging"
 fi
 
 alias rr="ranger"
